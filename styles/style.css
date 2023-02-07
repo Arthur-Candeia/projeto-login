@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/*Mobile First*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+ --verde: #49a09d;
+ --verdecl: #94CFCD;
+ --verdeec: #2D6462;
+ --azul: #6dcecb;
+ --roxo: #5f2c82;
+}
+
+body {
+    background-color: var(--roxo);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 240px;
+    border-radius: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+#img {
+    background: white url('../images/imagem.jpg') center center no-repeat fixed;
+    background-size: cover;
+    width: 240px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#content {
+    padding: 10px;
+}
+
+section > h1 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+section > p {
+    text-align: left;
+    font-size: 0.75em;
+    line-height: 1.4em;
+}
+
+label {
+    display: block;
+    background-color: var(--roxo);
+    margin-bottom: 5px;
+    text-align: right;
+    height: 44px;
+    border-radius: 10px;
+}
+
+label > span {
+    display: inline;
+    color: white;
+    position: absolute;
+    left: 8%;
+    margin-top: 5%;
+}
+
+input {
+    width: 180px;
+    height: 42px;
+    margin-top: 1px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--verdecl);
+    padding: 0 5px;
+}
+
+input:focus {
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+form [type="submit"] {
+    width: 100%;
+    border: none;
+    background-color: var(--verde);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--verdeec);
+    transition: all 0.2s ease-in-out;
+}
+
+a {
+    display: block;
+    border: 1px solid var(--verdeec);
+    height: 42px;
+    border-radius: 5px;
+    color: var(--verdeec);
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+a:hover {
+    background-color: var(--azul);
+    transition: all 0.2s ease-in-out;
+}
+
+a span {
+    transform: scale(0.7);
+}

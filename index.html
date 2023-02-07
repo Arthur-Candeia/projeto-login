@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <main>
+        <section id="img">
+            
+        </section>
+        <section id="content">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+            <form action="login.php" method="POST" autocomplete="off">
+                
+                <label for="iemail">
+                    <span class="material-symbols-outlined"> person </span>
+                    <input type="email" name="email" id="iemail" required minlength="7" maxlength="50" placeholder="seu e-mail">
+                </label>
+
+                <label for="isenha"> 
+                    <span class="material-symbols-outlined"> vpn_key </span>
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="50" placeholder="sua senha">
+                </label>
+                
+                <input type="submit" value="Entrar">
+            </form>
+            <a href="#"><p>Esqueci a senha 
+                <span class="material-symbols-outlined"> mail</span></p> </a>
+        </section>
+    </main>
+</body>
+</html>
